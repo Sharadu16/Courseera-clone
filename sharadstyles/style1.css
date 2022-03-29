@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+
+/* add font family for all */
+
+*{
+   margin:0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif; 
+}
+
+/* variable defines */
+
+:root{
+    --primary-color:#3525D3;
+    --white-color:#fff;
+    --black-color:#3C4A57;
+    --light-grey:#E4E8EE;
+}
+
+/* body css */
+
+#body{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* main-containt css */
+
+.wrapper{
+    padding:50px 25px 50px; 
+    box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.headline h1{
+    margin-left: 580px;
+}
+.para{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 580px;
+}
+.wrapper .form-group input:focus{
+  outline: none;
+}
+input{
+    margin-left: 480px;
+    padding:18px 120px;
+    font-size: 20px;
+}
+.headline{
+  
+   margin-bottom:30px;
+   margin-top: 40px;
+}
+.signup>div{
+    margin-bottom: 10px;
+}    
+.btn{
+    margin-left: 480px;
+    /* padding:15px 180px; */
+    background-color: rgb(6, 110, 230);
+    color: #E4E8EE;
+    font-size: 20px;
+    height:60px;
+    width:475px;
+    cursor: pointer;
+}
+
+h5 {
+    margin-left: 480px;
+}
+
+.forget{
+    margin: 5px 0px 30px 480px;
+}
+
+button{
+    margin-left: 480px;
+    padding:15px 130px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+.devidebutton{
+    
+    margin:10px 0px 10px 700px;
+}
+.fblogin{
+    margin:30px 0px 0px 480px;
+    padding:15px 117px;
+    font-size: 20px;
+}
+.applelogin{
+    margin:30px 0px 0px 480px;
+    padding:15px 137px;
+    font-size: 20px;
+}
+.account-exist{
+    text-align: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration:none;
+    color: rgb(9, 100, 204) ;
+    margin-left: 5px;
+    font-weight: bold;
+}
+ 

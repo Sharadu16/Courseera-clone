@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;500&family=Hind+Siliguri&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Sacramento&family=Source+Sans+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        #headerBox
+        {
+            height:550px ;
+            width:100% ;
+            background-color: #00255D;
+            display:flex;
+            gap:25px;
+            margin-bottom: 100px;
+        }
+
+        #heading
+        {
+            height:300px;
+            width:364px ;
+            color:white;
+            margin: auto;
+            /* border:1px solid red; */
+            margin-left: 300px;
+            /* font-family: 'Source Sans Pro', sans-serif; */
+            font-size: 22px;
+            margin-top: 80px;
+        }
+
+        #inputDiv
+        {
+            height: 430px;
+            width:330px ;
+            margin: auto;
+            border:1px solid black;
+            margin-right: 400px;
+            background-color: white;
+            border-radius: 8px;
+            padding-left: 26px;
+            padding-top: 20px;
+
+         
+        }
+        #paraTag{
+            line-height: 0.2px;
+            font-weight: 600;
+           
+        }
+        select{
+            height: 50px ;
+            width:300px;
+            border-radius: 4px;
+            margin-bottom: 10px ;
+        }
+
+        #inputBtn
+        {
+            height:50px;
+            width:300px;
+            border-radius: 4px;
+            margin-top: 10px;
+            margin-bottom: 7px;
+        }
+
+        #explore
+        {
+            display: grid;
+            width: 90%;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 80px 20px 80px 20px;
+            gap:20px;
+            /* border:1px solid teal ; */
+            margin: auto ;
+            margin-bottom: 100px;
+              
+        }
+
+        #explore > div{
+            /* border:1px solid red ; */
+            text-align:center;
+            
+            
+
+        }
+
+       #explore > div > a{
+            color:white ;
+            text-decoration: none;
+        }
+        #explore > div > a:hover{
+            text-decoration:underline;
+            color:white;
+        }
+        
+     
+        #rightDegree
+        {
+            display: grid;
+            width:85% ;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 250px;
+            gap:20px ;
+            margin: auto;
+            margin-bottom: 100px;
+           
+        }
+
+        #rightDegree > div{
+
+            /* border : 1px solid black; */
+            padding-left: 20px;
+            padding-right: 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 10px;
+        
+        }
+
+        #anchorTag
+        {
+            color:#0056D2 ;
+            font-size: large;
+          
+        }
+
+        #leadingUniversity
+        {
+          
+            display: grid;
+            grid-template-columns:100px 360px 100px 360px 100px 360px;
+            grid-template-rows: 120px 120px;
+            /* border: 1px solid green; */
+            gap:20px ;
+            margin: auto;
+            margin-left: 20px;
+            margin-bottom: 100px;
+        }
+        #leadingUniversity > div{
+            margin-bottom: 20px;
+        }
+
+        #leadingUniversity > div >img 
+        {
+            height:100% ;
+            width:100% ;
+        }
+        #plans > p
+        {
+            margin-top: -6px;
+         
+        }
+        #plans > a{
+         text-decoration: none;
+         font-weight: 600;
+        }
+
+        #img1
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/business.png");
+           padding-top: 26px;  
+        }
+
+        #img2
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/computer_science.png");
+           padding-top: 26px;  
+        }
+
+        #img3
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/data_science.png");
+           padding-top: 26px;  
+        }
+
+        #img4
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/health.png");
+           padding-top: 26px;  
+        }
+
+        #img5
+        {
+           background-color: #382d8b;
+           padding-top: 26px;  
+        }
+
+        #img6
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/business.png");
+           padding-top: 26px;  
+
+        }
+
+        #img7
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/data_science.png");
+           padding-top: 26px;  
+
+        }
+
+        #img8
+        {
+           background-image: url("https://s3.amazonaws.com/coursera_assets/browse/domains/social_sciences.png");
+           padding-top: 26px;  
+
+        }
+
+        #learn
+        {
+            width:98%;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 392px;
+            /* border:1px solid black; */
+            gap:15px;
+            margin: auto;
+            margin-left: 15px;
+        }
+
+        #learn,img{
+            height: 95% ;
+            width: 95%;
+
+        }
+
+        
+
+    </style>
+</head>
+<body>
+
+    <!-- //////////////////////       Heading Div         /////////////////// -->
+
+    <div id="headerBox">
+            <div id="heading"> <h1 >Find the right online degree program to elevate your career to the next level </h1></div>
+            <div id="inputDiv">
+                <p id="paraTag">I HAVE A</p>
+                <select id="qualification">
+                    <option value="">Less than high school diploma (or equivalent)</option>
+                    <option value="">High school diploma (or equivalent)</option>
+                    <option value="">Some college but no degree</option>
+                    <option value="">Associate Degree (e.g., AA, AS)</option>
+                    <option value="">Bachelor's degree (e.g., BA, AB, BS)</option>
+                    <option value="">Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA)</option>
+                    <option value="">Professional school degree (e.g., MD, DDS, DVM, LLB, JD)</option>
+                    <option value="">Doctorate degree (e.g., PhD, EdD)</option>
+                </select>
+
+                <p id="paraTag">I WANT A</p>
+                <select id="degree">
+                    <option value="">Master's Degree</option>
+                    <option value="">Bachelor's Degree</option>
+                </select>
+
+                <p id="paraTag">IN</p>
+                <select name="" id="">
+                    <option value="">Arts and Humanities</option>
+                    <option value="">Business</option>
+                    <option value="">Computer Science</option>
+                    <option value="">information-technology</option>
+                    <option value="">Math and Logic</option>
+                </select>
+
+                <button id="inputBtn" style="background-color:#0056D2;border: #0056D2; color:white; font-weight: 600;">See programs</button><br>
+                <button id="inputBtn" style="background-color:white ;border:1px solid #0056D2;color:#0056D2; font-weight: 600;">Email me info</button>
+            </div>
+    </div>
+
+    <!-- ////////////////        SHOW SEE PROGRAMS RESULT      ///////////////// -->
+    
+   <div id="showData"></div>
+
+    <!-- ///////////////      FIND The Right Online Degree     ///////////////// -->
+    
+   <center><h2>Find the right online degree for you</h2></center>
+
+   <div id="rightDegree">
+        <div>
+            <h3>Bachelor's Degrees</h3>
+            <p>Receiving a bachelor's degree can open a path to a career in many fields. You can find affordable online bachelor's degrees from top universities offered on Coursera.</p> 
+            <a href="" id="anchorTag" >View all Bachelor's degree programs</a>
+        </div>
+
+        <div>
+            <h3>Postgraduate Studies</h3>
+            <p>In addition to degrees, post graduate study programs may offer a chance to complete graduate level learning without committing to a full degree program.</p>
+            <a href=""  id="anchorTag">View all postgraduate programs</a>             
+        </div>
+
+        <div>
+            <h3>Master's Degrees</h3>
+            <p>Receiving a master's degree can open a path to a career in many fields. Whether you are looking to advance your career or change careers and work in a new field, you can find affordable online master's degrees from top universities offered on Coursera.</p>
+            <a href=""  id="anchorTag">View all Master's degree programs</a>  
+        </div>
+   </div>
+
+    <!-- /////////             Degree's from leading universities         ///////////-->
+
+    <h3 style="margin-left: 20px;">Degree's from leading universities</h3><br>
+    <div id="leadingUniversity">
+        <div>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1" alt="University of Michigan ">
+        </div>
+        <div id="plans">
+            <p style="font-weight:600">Master of Applied Data Science</p>
+            <p>#1 Public Research University in the U.S. (QS World Rankings, 2022)</p>
+            <a href="">Go to degree</a>
+        </div>
+
+        <div>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/1a/6984a02c5a45e0bc8c40b02a42bbdb/UNT-logo1.png?auto=format%2Ccompress&dpr=1" alt="University of North Texas">
+        </div>
+        <div id="plans">
+            <p style="font-weight:600">Bachelor of Applied Arts and Sciences</p>
+            <p>#23 Best Online Learning Schools (Newsweek, 2022)</p>
+            <a href="">Go to degree</a>
+        </div>
+
+        <div>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/0b3fb0640711e8b77e73d0990f7c82/180.png?auto=format%2Ccompress&dpr=1" alt="Fundação Instituto de Administração">
+        </div>
+        <div id="plans">
+            <p style="font-weight:600">Master of Business Administration</p>
+            <p>#2 Executive MBAs in Latin America (QS Rankings, 2020)</p>
+            <a href="">Go to degree</a>
+        </div>
+
+        <div>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/3a/4462907b1511e8a3472b753a4c35c3/HEC_logo.png?auto=format%2Ccompress&dpr=1" alt="HEC Paris">
+        </div>
+        <div id="plans">
+            <p  style="font-weight:600">MSc in Innovation and Entrepreneurship</p>
+            <p>#1 Business School in Europe (Financial Times, 2021)</p>
+            <a href="">Go to degree</a>
+        </div>
+
+        <div>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=format%2Ccompress&dpr=1" alt="University of Illinois at Urbana-Champaign">
+        </div>
+        <div id="plans">
+            <p style="font-weight:600">Master of Business Administration (iMBA)</p>
+            <p>#1 in Biggest Business School Innovations of the Decade (Poets&Quants, 2020)</p>
+            <a href="">Go to degree</a>
+        </div>
+
+        <div>
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/bb/16e85962a963ab3546196705d25865/CUBoulder_360x360.png?auto=format%2Ccompress&dpr=1" alt="University of Colorado Boulder">
+        </div>
+        <div id="plans">
+            <p style="font-weight:600">Master of Science in Data Science</p>
+            <p>#38 University in the World (Academic Ranking of World Universities, 2019)</p>
+            <a href="">Go to degree</a>
+        </div>
+    </div>
+            
+   
+
+
+    <!-- //////////        EXPLORE MORE DEGREES BY CATEGORIES       ////////// -->
+
+              <center><h3>Explore more degrees by category</h3></center>  
+              <div id="explore">
+                  <div id="img1" > <a href="" >Online MBA and Business Degrees</a> </div>
+                  <div id="img2" > <a href="" >Computer Science and Engineering Degrees</a> </div>
+                  <div id="img3" > <a href=""  >Data Science Degrees</a> </div>
+                  <div id="img4" > <a href=""  >Public Health Degrees</a> </div>
+
+                  <div> 15 degree programs available </div>
+                  <div> 7 degree programs available </div>
+                  <div> 7 degree programs available </div>
+                  <div> 4 degree programs available </div>
+
+                  <div id="img5" > <a href=""  >Top European Universities</a> </div>
+                  <div id="img6" > <a href=""  >Management Degrees</a> </div>
+                  <div id="img7" > <a href=""  >Data Analytics Degrees</a> </div>
+                  <div id="img8" > <a href=""  >Social Sciences Degrees</a> </div>
+
+                  <div> 8 degree programs available </div>
+                  <div> 7 degree programs available </div>
+                  <div> 4 degree programs available </div>
+                  <div> 2 degree programs available </div>
+              </div>
+
+
+
+
+              <!-- /////////////    Learn more about online degrees on Coursera      ////////////// -->
+
+             <center> <h2>Learn more about online degrees on Coursera</h2></center> 
+
+             <div id="learn">
+                 <div>
+                     <h3 style="color:#757575">TOP QUALITY LEARNING</h3>
+                    <p><strong style="font-size:30px ; font-family: OpenSans,Arial,sans-serif; color: #373A3C;" >We partner with leading universities to <br> deliver the world's best online degree <br> programs.</strong><br><br>
+                     You don't need to quit your job or move to a new city to earn a top university degree. Learn from the same professors and graduate with a high-value credential from the same university. Choose from a wide variety of online Master’s and Bachelor’s degrees in some of today’s most in-demand fields.</p>
+                 </div>
+                 <div>
+                     <img src="https://images.ctfassets.net/wp1lcwdav1p1/xzj8wZqOFaOy8KmUeiy4O/96e63f44d9ad9ec881ba8e7637d514c0/top-quality_3x__2_.png" alt="">
+                 </div>
+             </div><br>
+
+
+                    <!-- //////////////////////////////////// -->
+
+
+         <div id="learn">
+            <div>
+                <img src="https://images.ctfassets.net/wp1lcwdav1p1/41K1vnQNegmcmeCSSgQUwi/750ff01e5cd024ed948a74efc6d59b51/Same_diploma_2x.png" alt="">
+             </div>
+            <div>
+                <h3 style="color:#757575">BREAKTHROUGH PRICING</h3>
+                <p><strong style="font-size:30px ; font-family: OpenSans,Arial,sans-serif; color: #373A3C;" >Earn a high-stature degree for much less than similar on-campus programs.</strong><br><br>
+                    We partner with top universities to create affordable learning programs that make degrees more accessible for everyone. With tuition well below most on-campus degree programs, online degrees on Coursera are designed to allow students to invest in their education and increase their earning potential post-graduation. Financial aid is available for qualified students.</p>
+                </div>
+                       
+         </div><br>
+
+         <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+         <div id="learn">
+            <div>
+                <h3 style="color:#757575">MODULAR AND STACKABLE</h3>
+               <p><strong style="font-size:30px ; font-family: OpenSans,Arial,sans-serif; color: #373A3C;" >Try your first course risk-free & start working towards your degree today.</strong><br><br>
+                Courses, Specializations, or MasterTrack Certificates that are part of degrees allow you to start learning right away, so you can make progress on your own schedule. If you are admitted to the full program, your completed courses count towards your degree learning.</p>
+            </div>
+            <div>
+                <img src="https://images.ctfassets.net/wp1lcwdav1p1/7I4ow3GHAYAwiXiFKGQwnQ/ca333ef3ff01e29c7635ca10d51fdb55/new-stackable-content-graphic.png" autoplay muted>
+            </div>
+        </div>
+
+
+        <!-- /////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div id="learn">
+
+            <div>
+                <video src="https://videos.ctfassets.net/wp1lcwdav1p1/FplyBr1kooQUceICMesoC/2089b35516f9a8da344b645afad84d9e/learning-experience.mp4" autoplay="" muted="" loop="" aria-hidden="true" tabindex="-1"></video>             </div>
+            <div>
+                <h3 style="color:#757575">INTERACTIVE & ENGAGING</h3>
+                <p><strong style="font-size:30px ; font-family: OpenSans,Arial,sans-serif; color: #373A3C;" >Benefit from team-based learning and live expert instruction.</strong><br><br>
+                    Online degrees on Coursera are powered by technology that helps you spark meaningful connections with faculty and your peers. Throughout the program, you may attend online lectures from anywhere and interact directly with professors and classmates. On every step of your learning journey, you’ll have access to a dedicated online student support team. Get help to resolve sticking points so you can master new concepts and skills.</p>
+                </div>  
+                      
+         </div><br>
+
+</body>
+</html>
+<script>
+
+
+
+</script>

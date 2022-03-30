@@ -15,19 +15,22 @@
              <h1>Sign up</h1>
              <div class="para">Learn on your own time from top universities and businesses.</div>
          </div>
-         <form class="form" method="post" action="#">
+         <form class="form">
             <div class="signup">
                <div class="form-group">
                   <h5>FULL NAME</h5>
-                  <input placeholder="Enter your full name" type="text" required="#" >
+                  <input placeholder="Enter your full name" type="text" class="name" >
+                  <small></small>
                </div>
                <div class="form-group">
                 <h5>EMAIL</h5>   
-                <input placeholder="name@email.com" type="email" required="#" >
+                <input placeholder="name@email.com" type="email" class="email" >
+                <small></small>
               </div>
               <div class="form-group">
                 <h5>PASSWORD</h5>
-                <input placeholder="Create password" type="password" required="#" >
+                <input placeholder="Create password" type="password" class="password" >
+                <small></small>
                 <h5>Between 8 and 72 characters</h5>
               </div>
               <button type="submit" class="btn">join for free</button>
@@ -45,3 +48,42 @@
 </body>
 
 </html>
+
+<script>
+
+document.querySelector(".form").addEventListener("submit",addData);
+
+let userData = JSON.parse(localStorage.getItem("userDatabase")) || [];
+
+function addData(event){
+    event.preventDefault();
+
+      let username = document.querySelector(".name").value;
+      let email = document.querySelector(".email").value;
+      let password = document.querySelector(".password").value;
+
+      let userObj = {
+          username:username,
+          email:email,
+          password:password
+      };
+      
+      userData.push(userObj);
+      console.log(userData);
+      localStorage.setItem("userDatabase", JSON.stringify(userData));
+
+      if(username==" " || email == " " || password == " "){
+          if(password.length <= 7){
+              alert("Please fill all information");
+          }
+          else{
+              alert("Please fill all information");
+          }
+      }
+      else{
+          alert("Register successfully");
+          window.location.href="signin.html";
+      }
+}
+
+</script>

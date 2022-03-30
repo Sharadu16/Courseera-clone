@@ -27,7 +27,20 @@
     justify-content: center;
     min-height: 100vh;
 }
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group input{
+    margin-left: 480px;
+    height:65px;
+    width:475px;
+    font-size: 20px;
+}
 
+input{
+    padding-left: 20px;
+}
 /* main-containt css */
 
 .wrapper{
@@ -45,11 +58,7 @@
 .wrapper .form-group input:focus{
   outline: none;
 }
-input{
-    margin-left: 480px;
-    padding:18px 120px;
-    font-size: 20px;
-}
+
 .headline{
    margin-bottom:50px ;
 }
@@ -67,7 +76,7 @@ input{
     cursor: pointer;
 }
 
-h4,h5 {
+h5 {
     margin-left: 480px;
 }
 
@@ -107,12 +116,18 @@ a{
     margin-left: 5px;
     font-weight: bold;
 }
- .signup .inActive{
+small{
+    color:red;
+    text-align: center;
+}
+
+ /* .signup .inActive{
     display:none;
 }
 .signin{
     display:none;
 } 
 .signin .active{
-    display:block;
-} 
+    display:block; */
+/* }  */
+

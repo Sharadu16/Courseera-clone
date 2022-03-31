@@ -1,42 +1,46 @@
 
 
 let  gridArr=
-[{imgurl:'components\secondary2.jpg',videourl:"https://youtu.be/BVPJPG4zOso",dis:"Each week of every course, you will join a live global classroom. You will be involved in give-and-take discussions with faculty, not just listen to us. You will work on real-world accounting problems."},
-{imgurl:'components\secondary2.jpg',videourl:"https://youtu.be/BVPJPG4zOso",dis:"I feel great that I got the opportunity to work with one of the best universities on my own schedule. It will elevate my life, and my family's life overall, to help me grow my career into the latest technology trends."},
-{imgurl:'components\secondary2.jpg',videourl:"https://youtu.be/BVPJPG4zOso",dis:"In our program, we combine the expertise of teaching faculty who bring in solid ideas and frameworks with the hands-on expertise of seasoned entrepreneurs who function as mentors."},
-{imgurl:'components\secondary2.jpg',videourl:"https://youtu.be/BVPJPG4zOso",dis:"My first week of studying was in Africa with no mobile or wifi. I was able to download all the content in advance."},
-{imgurl:'components\secondary2.jpg',videourl:"https://youtu.be/BVPJPG4zOso",dis:"Today's learners need options. The future of work and the future of learning are converging."},
-{imgurl:'components\secondary2.jpg',videourl:"https://youtu.be/BVPJPG4zOso",dis:"The theoretical background that I am getting from the Illinois MCS program I am able to use a lot of those ideas on a day-to-day basis."}]
+[{imgurl:"/Courseera-clone/components/UNT-logo1 (1).jpg",name:"Bachelor of Applied Arts and Sciences",dis:"#23 Best Online Learning Schools (Newsweek, 2022)"},
+{imgurl:"/Courseera-clone/components/UoL-Logo_180x180.png",name:"Bachelor of Business Administration",dis:"#2 Executive MBAs in Latin America (QS Rankings, 2020)"},
+{imgurl:"/Courseera-clone/components/UNT-logo1 (1).jpg",name:"Bachelor of Sciences in Business Administration",dis:"#23 Best Online Learning Schools (Newsweek, 2022)"},
+{imgurl:"/Courseera-clone/components/UoL-Logo_180x180.png",name:"Bachelor of Sciences in Business Administration",dis:"#2 Executive MBAs in Latin America (QS Rankings, 2020)"}]
 
+function degreeFilter(){
+    console.log("hii")
+    let div = document.getElementById("leadingUniversity")
+    div.style.display="list-item";
+    div.style.marginLeft="100px";
+  let program = document.getElementById("degree").value 
+ if(program==="Bachelor's Degree") {
+   div.innerHTML=null;
+    appendvideo(gridArr)
+  }
+}
 function appendvideo(data){
-    let container = document.getElementById("videoGrid")
+    let container = document.getElementById("leadingUniversity")
     data.forEach((ele)=>{
       
-      
-
        let div = document.createElement("div")
-       
-       let iframe =document.createElement("iframe")
-        iframe.src=ele.videourl
+       let sdiv=document.createElement("div")
+       let imgdiv =document.createElement("div")
+       let img =document.createElement("img")
+        img.src=ele.imgurl
+        imgdiv.append(img)
 
+       let name= document.createElement("h3")
+       name.innerText=ele.name
+       
        let p= document.createElement("p")
        p.innerText=ele.dis
-       
-
-       div.append(iframe,p)
+       sdiv.append(name,p)
+       div.append(imgdiv,sdiv)
        
        container.append(div)
 
     })
 }
 // appendvideo(gridArr)
-
-
-
-
-
-
-
 function playVedio(url){
     window.open(url);
 }

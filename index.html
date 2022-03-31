@@ -137,7 +137,7 @@
         {
           
             display: grid;
-            grid-template-columns:100px 360px 100px 360px 100px 360px;
+            grid-template-columns:repeat( 3,460px);
             grid-template-rows: 120px 120px;
             /* border: 1px solid green; */
             gap:20px ;
@@ -147,12 +147,20 @@
         }
         #leadingUniversity > div{
             margin-bottom: 20px;
+            display: flex;
+            width: 460px;
+            height: 100px;
+            margin-bottom: 20px;
+             margin-right: 20px;
         }
 
         #leadingUniversity > div >img 
         {
             height:100% ;
             width:100% ;
+        }
+        #plans{
+            margin-left: 20px ;
         }
         #plans > p
         {
@@ -258,7 +266,7 @@
         #videoGrid{
             display: grid;
             grid-template-columns: repeat(6,1fr);
-            border: 1px solid black;
+            box-shadow: #1f1f1f;
             width: 1128px;
             margin: auto;
             margin-top: 25px;
@@ -365,8 +373,8 @@
 
                 <p id="paraTag">I WANT A</p>
                 <select id="degree">
-                    <option value="">Master's Degree</option>
-                    <option value="">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
                 </select>
 
                 <p id="paraTag">IN</p>
@@ -378,7 +386,7 @@
                     <option value="">Math and Logic</option>
                 </select>
 
-                <button id="inputBtn" style="background-color:#0056D2;border: #0056D2; color:white; font-weight: 600;">See programs</button><br>
+                <button id="inputBtn"  onclick="degreeFilter()" style="background-color:#0056D2;border: #0056D2; color:white; font-weight: 600;">See programs</button><br>
                 <button id="inputBtn" style="background-color:white ;border:1px solid #0056D2;color:#0056D2; font-weight: 600;">Email me info</button>
             </div>
     </div>
@@ -416,32 +424,40 @@
     <h3 style="margin-left: 20px;">Degree's from leading universities</h3><br>
     <div id="leadingUniversity">
         <div>
-            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1" alt="University of Michigan ">
-        </div>
-        <div id="plans">
-            <p style="font-weight:600">Master of Applied Data Science</p>
-            <p>#1 Public Research University in the U.S. (QS World Rankings, 2022)</p>
-            <a href="">Go to degree</a>
-        </div>
-
-        <div>
-            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/1a/6984a02c5a45e0bc8c40b02a42bbdb/UNT-logo1.png?auto=format%2Ccompress&dpr=1" alt="University of North Texas">
-        </div>
-        <div id="plans">
-            <p style="font-weight:600">Bachelor of Applied Arts and Sciences</p>
-            <p>#23 Best Online Learning Schools (Newsweek, 2022)</p>
-            <a href="">Go to degree</a>
+            <div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1" alt="University of Michigan ">
+            </div>
+            <div id="plans">
+                <p style="font-weight:600">Master of Applied Data Science</p>
+                <p>#1 Public Research University in the U.S. (QS World Rankings, 2022)</p>
+                <a href="">Go to degree</a>
+            </div>
         </div>
 
         <div>
-            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/0b3fb0640711e8b77e73d0990f7c82/180.png?auto=format%2Ccompress&dpr=1" alt="Fundação Instituto de Administração">
-        </div>
-        <div id="plans">
-            <p style="font-weight:600">Master of Business Administration</p>
-            <p>#2 Executive MBAs in Latin America (QS Rankings, 2020)</p>
-            <a href="">Go to degree</a>
+            <div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/1a/6984a02c5a45e0bc8c40b02a42bbdb/UNT-logo1.png?auto=format%2Ccompress&dpr=1" alt="University of North Texas">
+            </div>
+            <div id="plans">
+                <p style="font-weight:600">Bachelor of Applied Arts and Sciences</p>
+                <p>#23 Best Online Learning Schools (Newsweek, 2022)</p>
+                <a href="">Go to degree</a>
+            </div>
         </div>
 
+        <div>
+            <div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/0b3fb0640711e8b77e73d0990f7c82/180.png?auto=format%2Ccompress&dpr=1" alt="Fundação Instituto de Administração">
+            </div>
+            <div id="plans">
+                <p style="font-weight:600">Master of Business Administration</p>
+                <p>#2 Executive MBAs in Latin America (QS Rankings, 2020)</p>
+                <a href="">Go to degree</a>
+            </div>
+        </div>
+        
+        <div>
+            
         <div>
             <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/3a/4462907b1511e8a3472b753a4c35c3/HEC_logo.png?auto=format%2Ccompress&dpr=1" alt="HEC Paris">
         </div>
@@ -451,22 +467,28 @@
             <a href="">Go to degree</a>
         </div>
 
-        <div>
-            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=format%2Ccompress&dpr=1" alt="University of Illinois at Urbana-Champaign">
         </div>
-        <div id="plans">
-            <p style="font-weight:600">Master of Business Administration (iMBA)</p>
-            <p>#1 in Biggest Business School Innovations of the Decade (Poets&Quants, 2020)</p>
-            <a href="">Go to degree</a>
+        
+        <div>
+            <div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=format%2Ccompress&dpr=1" alt="University of Illinois at Urbana-Champaign">
+            </div>
+            <div id="plans">
+                <p style="font-weight:600">Master of Business Administration (iMBA)</p>
+                <p>#1 in Biggest Business School Innovations of the Decade (Poets&Quants, 2020)</p>
+                <a href="">Go to degree</a>
+            </div>
         </div>
 
         <div>
-            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/bb/16e85962a963ab3546196705d25865/CUBoulder_360x360.png?auto=format%2Ccompress&dpr=1" alt="University of Colorado Boulder">
-        </div>
-        <div id="plans">
-            <p style="font-weight:600">Master of Science in Data Science</p>
-            <p>#38 University in the World (Academic Ranking of World Universities, 2019)</p>
-            <a href="">Go to degree</a>
+            <div>
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/bb/16e85962a963ab3546196705d25865/CUBoulder_360x360.png?auto=format%2Ccompress&dpr=1" alt="University of Colorado Boulder">
+            </div>
+            <div id="plans">
+                <p style="font-weight:600">Master of Science in Data Science</p>
+                <p>#38 University in the World (Academic Ranking of World Universities, 2019)</p>
+                <a href="">Go to degree</a>
+            </div>
         </div>
     </div>
             

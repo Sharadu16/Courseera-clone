@@ -89,7 +89,7 @@
         #explore > div{
             /* border:1px solid red ; */
             text-align:center;
-            
+           
             
 
         }
@@ -269,10 +269,10 @@
             width: 150px;
             
         }
-        #videoGrid>div:first-child{
-            height: 200px;
-        
+        #videoGrid>div img{
             
+            height: 150px;
+  
         }
         #container{
             display:grid;
@@ -570,32 +570,32 @@
             </div>
             <div id="videoGrid">
                 <div>
-                    <div style="background-image:url('.components/secondary2.jpg'); background-size: cover;" onclick="playVedio(url)"></div>
-                    <div></div>
+                    <div onclick="playVedio('https://youtu.be/BVPJPG4zOso')"><img src="\Courseera-clone\components\secondary2.jpg"></div>
+                    <div><P>"Each week of every course, you will join a live global classroom. You will be involved in give-and-take discussions with faculty, not just listen to us. You will work on real-world accounting problems."</P></div>
                 </div>
                 <div>
-                    <div style="background-image: url('.components/mcs-ds_video_2x.jpg');background-size: cover;" onclick="playVedio(url)"></div>
-                    <div></div>
+                    <div  onclick="playVedio('https://youtu.be/e64ZHYvWTaE')"><img src="\Courseera-clone\components\mcs-ds_video_2x.jpg"></div>
+                    <div><p>"I feel great that I got the opportunity to work with one of the best universities on my own schedule. It will elevate my life, and my family's life overall, to help me grow my career into the latest technology trends."</p></div>
                 </div>
                 <div>
-                    <div style="background-image: url('.components/secondary2.jpg');background-size: cover;" onclick="playVedio(url)"></div>
-                    <div></div>
+                    <div  onclick="playVedio('https://youtu.be/-PHxMCnH1YE')"><img src="\Courseera-clone\components\HEC-video-placeholder_2x.jpg"></div>
+                    <div><p>"In our program, we combine the expertise of teaching faculty who bring in solid ideas and frameworks with the hands-on expertise of seasoned entrepreneurs who function as mentors."</p></div>
                 </div>
                 <div>
-                    <div style="background-image: url('.components/secondary2.jpg');background-size: cover;" onclick="playVedio(url)"></div>
-                    <div></div>
+                    <div  onclick="playVedio('https://youtu.be/BIgZtprxuwU')"><img src="\Courseera-clone\components\Screen_Shot_2020-12-10_at_9.34.50_AM.png"></div>
+                    <div><p>"My first week of studying was in Africa with no mobile or wifi. I was able to download all the content in advance."</p></div>
                 </div>
                 <div>
-                    <div style="background-image: url('.components/secondary2.jpg');background-size: cover;" onclick="playVedio(url)"></div>
-                    <div></div>
+                    <div onclick="playVedio('https://youtu.be/eRTA-IqQi9I')"><img src="\Courseera-clone\components\Screen_Shot_1400-01-26_at_14.00.32.png"></div>
+                    <div><P>"Today's learners need options. The future of work and the future of learning are converging."</P></div>
                 </div>
                 <div>
-                    <div style="background-image: url('.components/secondary2.jpg');background-size: cover;" onclick="playVedio(url)"></div>
-                    <div></div>
+                    <div  onclick="playVedio('https://youtu.be/SecvDI9MN6c')"><img src="\Courseera-clone\components\Screenshot_2019-06-26_14.56.15.jpg"></div>
+                    <div><P>"The theoretical background that I am getting from the Illinois MCS program I am able to use a lot of those ideas on a day-to-day basis."</P></div>
                 </div>
             </div>
 
-            <h1>Join a global learning community</h1>
+              <h1 style="margin-top: 100px; margin-bottom: 20px;font-weight: 100;">Join a global learning community</h1>
             <div id="container"> 
                 <div><img src="components\grantm.jpg"> <div class="black"> <p>Grant M.</p> <p>University of Illinois iMBA Student</p></div> </div>
                 <div><img src="components\anua.jpg"> <div class="black"><p>Anu A.</p> <p>University of Illinois MCS-DS Student</p></div> </div>
@@ -644,7 +644,9 @@
 
 <script>
     
-
+    function playVedio(url){
+    window.open(url);
+}
 
 
 

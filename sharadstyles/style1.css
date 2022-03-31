@@ -60,10 +60,9 @@ body>div{
     height:65px;
     width:475px;
     font-size: 20px;
-}
-input{
+    border-radius: 5px;
     padding-left: 20px;
-}
+} 
 .headline{
    margin-bottom:50px;
 }
@@ -73,41 +72,43 @@ input{
 .btn{
     margin-left: 30px;
     background-color: rgb(6, 110, 230);
-    color: #E4E8EE;
+    color: #e4e8ee;
     font-size: 20px;
     height:60px;
     width:475px;
     cursor: pointer;
+    justify-content: center;
 }
-
 h5 {
-    margin-left: 30px;
+    margin:5px 0px 3px 30px;
+    letter-spacing: 2px;
+    font-size: 13px;
 }
-
 .forget{
     margin: 5px 0px 30px 30px;
 }
-
 button{
-    margin-left: 30px;
-    padding:15px 130px;
+    display: flex;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     background-color: white;
+    height:60px;
+    width:475px;
+    padding-top: 10px;
+    margin:10px 0px 10px 30px;
+    border-radius: 5px;
+    
 }
 .devidebutton{
-    
     margin:10px 0px 10px 250px;
 }
 .fblogin{
-    
-    padding:15px 117px;
+    margin:10px 0px 10px 30px;
     font-size: 20px;
 }
 .applelogin{
-
-    padding:15px 137px;
+    margin:10px 0px 10px 30px;
     font-size: 20px;
 }
 .account-exist{
@@ -120,4 +121,23 @@ a{
     margin-left: 5px;
     font-weight: bold;
 }
+.fa-google {
+    color: red;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 70px;
+  }
+  .fa-facebook {
+    /* background: #3B5998; */
+    color:blue;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 70px;
+  }
+  .fa-apple {
+    color:black;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 70px;
+  }
  

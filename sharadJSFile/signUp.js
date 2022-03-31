@@ -43,7 +43,7 @@ function addData(event){
         console.log(userData);
         localStorage.setItem("userDatabase", JSON.stringify(userData));
 
-      alert("Register successfully");
+      alert("Signup successfull! we are redirecting now");
       window.location.href="signin.html";
 
     }

@@ -1,0 +1,327 @@
+    /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"); */
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Source Sans Pro", "Open Sans", sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .Notification {
+        background-color: #ffbf00;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    #clear {
+        position: relative;
+        top: 2%;
+        right: -25%;
+        cursor: pointer;
+    }
+    /* Nav bar  */
+    .navbar {
+        display: flex;
+        padding: 10px 50px;
+        justify-content: space-between;
+        border-bottom: 2px solid #c3c3c3;
+        align-items: center;
+    }
+    .logo {
+        width: 300px;
+        /* border: solid 1px; */
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+    .nav-items {
+        display: flex;
+        align-items: center;
+    }
+    .nav-items ul {
+        display: flex;
+        align-items: center;
+    }
+    .nav-items ul li {
+        list-style-type: none;
+        margin: 0px 20px;
+        transition: 300ms ease-in-out;
+        cursor: pointer;
+    }
+    .nav-items ul li:hover {
+        color: blue;
+    }
+    .nav-items ul hr {
+        background: black;
+        height: 20px;
+        font-weight: 700;
+        width: 3px;
+    }
+    .nav-items button {
+        border: 0;
+        outline: 0;
+        padding: 10px 20px;
+        color: white;
+        background-color: rgb(8, 82, 244);
+        cursor: pointer;
+    }
+    .nav-items button:hover{
+        color: white;
+        background-color: rgb(21, 21, 255);
+
+    }
+
+    /* style for business-banner */
+    .business-banner {
+        padding: 1.5% 13%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%;
+    }
+
+    .business-info h1 {
+        font-size: 2.5rem;
+        margin-top: 15%;
+        font-weight: 600;
+    }
+    .business-info p {
+        margin: 30px 0px;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    .business-banner .business-img img {
+        width: 90%;
+        margin: auto;
+    }
+    .business-info button {
+        padding: 20px 70px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #fff;
+        background: rgb(8, 82, 244);
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+    }
+    .business-info button:hover {
+        background-color: rgb(12, 12, 228);
+    }
+    .business-info a {
+        color: rgb(8, 82, 244);
+    }
+
+    /* discover */
+    .discover {
+        padding: 25px;
+        font-size: 1.5rem;
+        text-align: center;
+        background: #ebf3ff;
+    }
+
+    .container{
+
+        background-color: rgb(235,243,255);
+        padding: 60px 0px 60px 0px; 
+
+    }
+    #h1{
+        text-align: center;
+        margin: 30px;
+    }
+    .innerdiv-card{
+        height: 400px;
+        padding : 40px 50px 40px 50px;
+        /* border: 3px solid blue; */
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,300px);
+        width: 100%;
+        gap: 30px;
+        height: auto;
+        background-color: rgb(235,243,255);
+        /* border: 3px solid red; */
+        margin: auto;
+    }
+
+    .innerdiv-card>div{
+        
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        background-color: #7466d9;
+    }
+
+    /* access-courses */
+    .access-courses {
+        padding: 4% 13%;
+        text-align: center;
+    }
+
+    .universities-img {
+        display: flex;
+        margin: 30px 0px;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .universities-img img {
+        width: 80px;
+    }
+
+    /* company-uses */
+    .company-uses {
+        text-align: center;
+        padding: 2% 13%;
+    }
+    .company-uses .uses-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+    }
+    .uses-item {
+        padding: 10%;
+    }
+    .uses-item p {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    /* main-card */
+
+    .main-card {
+        padding: 2% 13%;
+    }
+    .main-card h1 {
+        margin: auto;
+        width: fit-content;
+    }
+    .card-div {
+        padding: 5% 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+
+
+        margin: auto;
+
+    }
+    .card {
+        border: 1px solid #c3c3c3;
+        width: 230px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+            rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .card-info {
+        padding: 15px;
+    }
+    .card-info p:last-child {
+        margin-top: 20px;
+        color: blue;
+        font-weight: 700;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card p {
+        margin-top: 2rem;
+    }
+
+    /* Companies that innovate */
+    .companies {
+        padding: 4% 13%;
+        text-align: center;
+    }
+    .compamies-imgs {
+        display: flex;
+        margin: 30px 0px;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .compamies-imgs img {
+        width: 150px;
+         height: auto;
+    }
+    .compamies-imgs img:nth-child(4) {
+        width: 50px;
+    }
+    .companies > img {
+        margin: 20px auto;
+    }
+
+    /* start-skill */
+    .start-skill {
+        text-align: center;
+        background: #382d8b;
+        color: #fff;
+        padding: 3%;
+    }
+    .start-skill p {
+        margin: 2rem;
+        font-size: 1.3rem;
+    }
+    .start-skill button {
+        padding: 20px 100px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #382d8b;
+        background: #fff;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+    }
+    .start-skill button:hover {
+        background-color: #eeebeb;
+    }
+
+    /* .explore-reso */
+    .explore-reso {
+    padding: 3% 13%;
+    }
+    .explore-reso > h1 {
+    margin: 2.5rem auto;
+    width: fit-content;
+    }
+    .explore-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    }
+    .explore-card img {
+    width: 100%;
+    }
+    .explore-card {
+    border: 1px solid #f1f1f1;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .explore-card-info {
+    padding: 2rem;
+    }
+    .explore-card-info h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    }
+    .explore-card .explore-card-info p {
+    margin: 2.5rem 0px;
+    font-size: 1rem;
+    }
+    .explore-card-info p:last-child {
+    margin: 0;
+    color: blue;
+    font-weight: 700;
+    }
+

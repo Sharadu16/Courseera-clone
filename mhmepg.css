@@ -399,9 +399,10 @@
     font-weight: bold;
     margin-left: 80px;
     gap: 80px;
+    margin-bottom: 20px;
 }
 #nav21:hover {
-  background-color: aqua;
+  text-decoration: underline 3px solid blue;
   }
 #nav22:hover {
   background-color: aqua;
@@ -409,3 +410,12 @@
 #nav23:hover {
   background-color: aqua;
   }
+
+#blank{
+  height: auto;
+  width: 90%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
+  margin: auto;
+}

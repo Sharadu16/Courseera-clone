@@ -1,0 +1,122 @@
+body{
+    font-family: OpenSans, Arial, sans-serif;
+    background-color: rgb(176, 237, 255);
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    background-color: #ffffff;
+    color: white;
+    justify-content: space-between;
+    height: 50px;
+    padding: 25px 0 0 20px;
+    font-family: monospace;
+    font-size: 20px;
+    /* position: sticky; */
+    top: 0;
+  
+}
+.left {
+    width: 70%;
+    font-weight: 700;
+    font-size: 22px;
+}
+.right {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: aqua;
+}
+
+/* payment page */
+#container {
+
+    height: 530px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+}
+.card {
+    width: 22%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+}
+.amt {
+   
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0px;
+    font-size: 22px;
+    color: green;
+
+}
+.cardNo,
+.cvv,
+.expiry {
+    color: rgb(45, 45, 45);
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.cvv {
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#cardNumber {
+    width: 90%;
+    padding: 8px;
+    letter-spacing: 1px;
+}
+input {
+    padding: 7px;
+    width: 80%;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+#name {
+    width: 90%;
+}
+.cardDetails {
+    display: flex;
+}
+.submit {
+    text-align: center;
+}
+button {
+    background-color: #1c2938;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    width: 70%;
+    margin: 20px 5px;
+    border-radius: 5px;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #4747ff;
+}
+#container{
+    background-color: rgb(158, 203, 255);
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+}

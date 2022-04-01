@@ -1,0 +1,127 @@
+
+        body{
+            background-color: rgb(176, 237, 255);
+            font-family: OpenSans, Arial, sans-serif;;
+        }
+    #container{
+        width: 30%;
+        height: auto;
+        padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        margin: auto;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        background-color: white;
+      
+    }
+    #topdiv{
+        height: 150px;
+        width: 100%;
+        background-color: rgb(31, 117, 209);
+        display: flex;
+        /* padding: 20px; */
+        border-radius: 5px;
+    }
+    #topdiv>img{
+        margin: 30px;
+    }
+    #div2{
+           height: 50px;
+        background-color: rgba(6, 67, 153, 0.983);
+        border-radius: 5px;
+        display: flex;
+       
+    }
+    #select{
+        margin: 11px;
+        font-size: 16px;
+        background-color: rgba(6, 67, 153, 0.983);
+    color: white;
+    border: none;
+    }
+    #select1{
+     
+        font-size: 16px;
+        padding-left: 20px;
+    }
+    #image1>button>img{
+        height: 34px;
+        width: 34px;
+        /* margin-left: 30px; */
+        margin-right: 20px;
+        /* margin-top: 20px; */
+    }
+    #div11{
+        overflow: scroll;
+        height: 300px;
+    }
+    #image1>button{
+        height: 60px;
+        width: 364px;
+        background-color: white;
+        border: none;
+        color: rgb(55, 55, 55);
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin-top: 5px;
+        margin-left: 10px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    #image1>button:hover{
+        background-color: rgb(115, 136, 255);
+        color: white;
+        font-size: 20px;
+        transition: .5s;
+    }
+
+ #ipara>p{
+     font-weight: 600;
+     margin-bottom: 30px;
+ }
+ #num1{
+     color:aliceblue;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-left: 10px;
+ }
+ #onediv{
+     height: 30px;
+     width: 100%;
+ }
+ #onediv>p{
+     text-align: center;
+     font-weight: bold;
+     font-size: 17px;
+     color: green;
+ }
+ #h4{
+     font-weight: 600;
+     text-align: center;
+     color: rgb(19, 19, 19);
+ }
+.cardbtn1>#googlepay{
+   width: 180px;
+   height: 94%;
+   margin-top: 2px;
+   border-radius: 40px;
+   margin-left: 20px;
+    
+}
+.cardbtn2>#pay{
+    width: 180px;
+   height: 95%;
+   margin-top: 2px;
+   border-radius: 40px;
+   margin-left: 20px;
+}
+.cardbtn3>#pay1{
+    width: 180px;
+   height: 95%;
+   margin-top: 2px;
+   border-radius: 40px;
+   margin-left: 20px;
+}
+#course_name,#Price{
+color: white;
+}

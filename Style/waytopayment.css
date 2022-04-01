@@ -1,0 +1,54 @@
+#container
+{
+    border:1px solid red;
+    background-image: url("./images/backGround.png");
+    height: 800px;
+    width:100%;
+    margin: auto;
+
+}
+
+#selectPlan
+{
+    height:500px ;
+    width:735px;
+    border:1px solid black;
+    margin: auto;
+    margin-top: 100px; 
+    background-color: white;
+    overflow-y: scroll;
+   
+}     
+
+#header
+{
+   height:100px ;
+   width:100%;
+   background-color: #08274E;
+   margin-top: -15px;
+   padding-top: 28px;
+   color: white;
+   font-family: open sans;
+}
+
+#flexDetails
+{
+    display: grid;
+    grid-template-columns: 345px 320px;
+    grid-template-rows: 15px 15px ;
+    gap:25px;
+    margin-top: 25px;
+    background-color: white;
+    
+}
+
+#details
+{
+    padding-left: 50px; 
+}
+
+#html
+{
+width: 15px;
+height: 1.2em;
+}

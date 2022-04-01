@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment</title>
+        <link rel="stylesheet" href="./Style/lastpayment.css">
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        <!-- Payment Page -->
+        <div id="container">
+        <div class="card">
+            <div class="amt">
+            <p id="amount1"></p>
+            
+            </div>
+            <p class="cardNo">CARD NUMBER</p>
+            <input type="number" name="cardNumber"id="cardNumber"value="1234567890987" required />
+            <p class="cardNo">NAME</p>
+            <input type="text" name="name" id="name" value="" placeholder="Enter Name" required />
+
+            <div class="cardDetails">
+            <div class="expiry">
+                <p class="expiry">EXPIRY</p>
+                <input type="month" name="expiry" value="2024-02" id="expiry"  required  />
+            </div>
+
+            <div class="box-3">
+                <p class="cvv">CVV</p>
+                <input   name="number" type="text"  id="cvv" value="098" maxlength="3"required/>
+            </div>
+            </div>
+            <div class="submit">
+            <button type="submit" id="btn">Make Payment</button>
+            </div>
+        </div>
+        </div>
+    </body>
+    </html>
+
+    <script src="./Script/lastpayment.js"> 
+
+
+    </script>

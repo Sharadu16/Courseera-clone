@@ -23,7 +23,7 @@
             // console.log(otp)
             if (otp === "123456") {
             localStorage.removeItem("cartPage");
-            window.location.href = "succss.html";
+            window.location.href = "mhmepg.html";
             alert("Payment is Successful");
          
             }

@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/838022ab7e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="hp.css"/>
+    <link rel="stylesheet" href="./footer/footer.css"/>
 </head>
 <body>
     <div id="main">
@@ -434,8 +435,19 @@
                 <div class="d3">Join For Free</div>
            </div>
        </div>
-    
+       <div id="footer"></div>
     </div>
 </body>
 </html>
 <script src="slide.js"></script>
+<script type="module">
+
+    //what is a module?
+    //more flexible and more powerful j.s file
+  
+    import footer from "./hmfooter.js";
+    console.log("footer:",footer);
+  
+    let foot = document.getElementById("footer")
+    foot.innerHTML = footer();
+  </script>

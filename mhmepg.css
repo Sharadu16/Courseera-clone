@@ -1,22 +1,23 @@
 #a{
-    height: 160px;
+    height: 230px;
     width: 100%;
-    background-color: #d6edf6;
+    background-color: #dcf1fa;
     margin-top: 100px;
-    padding-top: 30px;
+    padding: 6px;
     font-size: 20px;
     display: flex;
     gap: 8px;
     text-align: center;
-    padding-left: 220px;
 }
 #a > .info1{
-   padding-top: 90px;
+   padding-left: 80px;
+   padding-top: 190px;
+   padding-right: 250px;
    font-size: 32px;
 }
 .info{
     padding-top: 50px;
-    margin-left: 50px;
+    margin-left: 140px;
 }
 .info22{
     color: #1f1f1f;
@@ -400,17 +401,17 @@
     margin-left: 80px;
     gap: 80px;
     margin-bottom: 20px;
+    padding: 8px;
 }
 #nav21:hover {
   text-decoration: underline 3px solid blue;
   }
-#nav22:hover {
-  background-color: aqua;
-  }
+#nav22:hover{
+  text-decoration: underline 3px solid blue;
+}
 #nav23:hover {
-  background-color: aqua;
-  }
-
+  text-decoration: underline 3px solid blue;
+}
 #blank{
   height: auto;
   width: 90%;
@@ -418,4 +419,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
   margin: auto;
+}
+#ek{
+  margin-left: 100px;
 }

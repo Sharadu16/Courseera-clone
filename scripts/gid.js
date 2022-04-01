@@ -11,7 +11,7 @@ function degreeFilter(){
     let h5= document.createElement("h5")
     h5.innerText="Showing 6 total results for Master's Degree in Business"
     let div = document.getElementById("leadingUniversity")
-    div.style.display="list-item";
+    div.style.display="list-item";  
     div.style.marginLeft="100px";
     div.append(h5);
   let program = document.getElementById("degree").value 

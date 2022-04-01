@@ -1,0 +1,79 @@
+body{
+    font-family: OpenSans, Arial, sans-serif;;
+     background-color: rgb(176, 237, 255);
+}
+#container{
+    width: 28%;
+    height: 530px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+}
+#container>form>p{
+    margin-top:20%;
+    padding-left:60px;
+}
+#topdiv{
+    height: 155px;
+    width: 100%;
+    background-color: rgb(57,129,218);
+    display: flex;
+    /* padding: 20px; */
+    border-radius: 5px;
+}
+#topdiv>img{
+    margin: 30px;
+}
+#div2{
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(6, 67, 153, 0.983);
+}
+#select{
+    margin: 11px;
+    font-size: 16px;
+    background-color: rgb(10,70,155);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#select1{
+ 
+    font-size: 16px;
+    padding-left: 20px;
+    width: 100px;
+    height: 27px;
+}
+input 
+{
+ width: 290px;
+ height: 25px;
+ font-size: 17px;
+}
+#container2>p{
+ font-size: 18px;
+
+}
+form{
+ height: 700px;
+}
+
+#proceed{
+ height: 50px;
+ width: 100%;
+ margin-bottom: 30px;
+ background-color: rgb(42,115,204);
+ color: white;
+ font-size: 18px;
+ border-radius: 5px;
+}
+#proceed:hover{
+ background-color:rgb(4, 66, 201) ;
+}
+#form>p{
+ margin-top: 70px;
+ padding-left: 40px;
+ font-size: 18px;
+}

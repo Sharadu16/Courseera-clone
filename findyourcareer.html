@@ -9,7 +9,8 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet"
   />
-   <link rel="stylesheet" href="FindYourCareer.css">
+ 
+   <link rel="stylesheet" href="./Style/FindYourCareer.css">
 
 </head>
 <body>
@@ -636,11 +637,16 @@
   </section>
 
 
-
+<div id="footer"></div>
 
 </body>
 </html>
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-<script src="FindNewCareer.js"></script>
-<script src="slide.js"></script>
+<script src="./Script/FindNewCareer.js"></script>
+<script src="./Script/slide.js"></script>
 
+<script type="module">
+    import {footer,Minifooter} from "./components/footer.js";
+    document.querySelector("#footer").innerHTML = footer();
+
+</script>

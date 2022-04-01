@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/838022ab7e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="completed.css"/>
+    <link rel="stylesheet" href="./footer/footer.css"/>
+</head>
+<body>
+    <div id="a">
+        <div class="info1">Welcome!</div>
+        <img src ="./components/images/que.png" alt=""/>
+    </div>
+    <div id="nav2">
+        <div id="nav21">Home</div>
+        <div id="nav22">In Progress</div>
+        <div id="nav23">Completed</div>
+    </div>
+
+    <div>
+        <div id="div1">
+            <img src="./components/images/globe.png">
+            <p>You will find your finished courses here.</p>
+            <div id="k">
+                <img src="./components/images/pho2.png"/>
+                <div>
+                    <p>The great thing about Coursera is the flexibility. You can learn anywhere, which is better than a rigid campus curriculum.<p>
+                    <p id="kx">— Yeshwanth C.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="div2">
+            <div class="c1">
+                <div>
+                    <h5>UNIANDES</h5>
+                    <h3>Maestría en Ingeniería de Software</h3>
+                    <div>¡Inscríbete ahora! Tienes hasta el 13 de abril 2022</div>
+                    <div  class="bt1">Get Started</div>
+                </div>
+                <div>
+                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-promounit-images.s3.amazonaws.com/10/c8d46f850745f984a9f4073ba352a8/SW-hpp.png?auto=format%2Ccompress&dpr=1&w=172"/>
+                </div>
+            </div>
+            <div class="c1">
+                <div>
+                    <h5>UNIVERSITY OF CHICAGO</h5>
+                    <h3>Machine Learning for Analytics MasterTrack®</h3>
+                    <div>Master in-demand computing skills and hone your innovation and creativity</div>
+                    <div class="bt1">Learn More</div>
+                </div>
+                <div>
+                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-promounit-images.s3.amazonaws.com/b9/898fd79c8f47249979cbfca8af2086/University-of-Chicago_Machine-Learning_HPP-unit-x2size-1-.png?auto=format%2Ccompress&dpr=1&w=172"/>
+                </div>
+            </div>
+        </div>
+        <div id="b31">Explore all of Coursera</div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
+<script src="mhepg.js"></script>
+<script type="module">
+    import footer from "./footer/footer.js";
+    console.log("footer:",footer);
+  
+    let foot = document.getElementById("footer")
+    foot.innerHTML = footer();
+</script>

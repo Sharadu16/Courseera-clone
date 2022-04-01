@@ -60,3 +60,12 @@ const footer = ()=>{
     </div>`;
 };
  export default footer;
+
+//html last add  <div id= footer></div>
+
+// <script type="module">
+//     import footer from "./footer/footer.js";
+//     console.log("footer:",footer);
+//     let foot = document.getElementById("footer")
+//     foot.innerHTML = footer();
+// </script>

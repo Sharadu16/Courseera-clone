@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;500&family=Hind+Siliguri&family=Montserrat:wght@100&family=Open+Sans:wght@300&family=Sacramento&family=Source+Sans+Pro&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    #container
+    {
+        border:1px solid red;
+        background-image: url("./images/backGround.png");
+        height: 800px;
+        width:100%;
+        margin: auto;
+
+    }
+
+    #selectPlan
+    {
+        height:500px ;
+        width:735px;
+        border:1px solid black;
+        margin: auto;
+        margin-top: 100px; 
+        background-color: white;
+        overflow-y: scroll;
+       
+    }     
+
+    #header
+    {
+       height:100px ;
+       width:100%;
+       background-color: #08274E;
+       margin-top: -15px;
+       padding-top: 28px;
+       color: white;
+       font-family: open sans;
+    }
+
+    #flexDetails
+    {
+        display: grid;
+        grid-template-columns: 345px 320px;
+        grid-template-rows: 15px 15px ;
+        gap:25px;
+        margin-top: 25px;
+        background-color: white;
+        
+    }
+
+    #details
+    {
+        padding-left: 50px; 
+    }
+
+    #html
+    {
+    width: 15px;
+    height: 1.2em;
+    }
+
+</style>
+<body>
+    <div id="container">
+
+        <div id="selectPlan">
+                <div id="header">
+                  <center><h2>Enroll in this 8-course Professional Certificate</h2></center> 
+                </div>
+
+
+                <div  id="details">
+                    <div>
+                        <p id="courseName">Google Data Analytics is a 8-course Professional Certificate </p> 
+                        <strong>This Professional Certificate includes:</strong>
+      
+                        <div id="flexDetails">
+    
+                          <div >
+                              <i class="fa fa-check" style="font-size:18px;color:rgb(86, 86, 255); font-weight: 100;margin-right: 10px;"></i> 
+                             <span>Unlimited access to all 8 courses<span>
+                          </div>
+    
+                          <div>
+                              <i class="fa fa-check" style="font-size:18px;color:rgb(86, 86, 255); font-weight: 100;margin-right: 10px;"></i> 
+                             <span>EMI payment options<span>
+                          </div>
+    
+                          <div>
+                              <i class="fa fa-check" style="font-size:18px;color:rgb(86, 86, 255); font-weight: 100;margin-right: 10px;"></i> 
+                             <span>Shareable certificate of completion from Google<span>
+                          </div>
+    
+                          <div>
+                              <i class="fa fa-check" style="font-size:18px;color:rgb(86, 86, 255); font-weight: 100;margin-right: 10px;"></i> 
+                             <span>14 day refund period<span>
+                          </div>
+    
+                      </div>
+
+                      <h3 style="margin-top: 25px;">How much time do you need to finish?</h3>
+                      <p>We've estimated how many hours you'll need to learn each week to finish all 8 courses. One-time payment plans below do not automatically renew.</p>
+
+
+                      <!--------------------select Plans---------------------------->
+
+                      <form id="form">
+
+                        <input type="radio" id="month1" name="fav_language" value="month1" >
+                                <label for="" id="month11" >1 month</label>
+                                <label for="" id="price1" style="margin-left:452px; ">₹1,044</label><br>
+                                <label for="" style="margin-left:42px; background-color: rgb(199, 199, 199);">20+ hours/week</label><br><br><br>
+
+                        <input type="radio" id="month3" name="fav_language" value="month2" >
+                        <label for="html"  id="month13" >3 months</label>
+                        <label for="" id="price2" style="margin-left:452px; ">₹2,089</label><br>
+                        <label for="" style="margin-left:42px; background-color: rgb(199, 199, 199);">17 hours/week</label>
+                        <label for="" style="margin-left:400px;background-color: #FFE057; ">30% OFF</label><br><br><br>
+
+                        <input type="radio" id="month6" name="fav_language" value="month3" >
+                        <label for="html"  id="month16">6 months</label>
+                        <label for="" id="price3" style="margin-left:452px; ">₹3,134</label><br>
+                        <label for="" style="margin-left:42px; background-color: rgb(199, 199, 199);">8 hours/week</label>
+                        <label for="" style="margin-left:408px;background-color: #FFE057; ">30% OFF</label><br><br><br>
+
+                        <div style="width:100%; height:100px;border-top: black;background-color: white;overflow-y:none;">
+                        <button id="btn" style="border: none;border-radius: 2px;height:53px;width:300px;margin-top: 20px;margin-left: 30%;background-color: #2A73CC;color:white;font-size: 14px;font-weight: bold;">Continue</button>
+                    
+                        <br>  
+                      </form>
+                </div>
+            </div>
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+
+   
+
+
+    var btn = document.querySelector("#btn").addEventListener("click",function()
+    {
+           event.preventDefault()
+         
+           var googleData = [] ;
+           var courseName = document.querySelector("#courseName").innerHTML
+          
+
+           var input1 = document.querySelector("#month1") ;
+           var input2 = document.querySelector("#month3") ;
+           var input3 = document.querySelector("#month6") ;
+
+            if (input1.checked == true) {
+               
+                //console.log("month1");
+
+                var monthData = document.querySelector("#month11").innerHTML ;
+                var price  = document.querySelector("#price1").innerHTML ;
+                
+                var obj = {
+                   
+                    course : courseName,
+                    month : monthData,
+                    price : price
+                }
+
+                googleData.push(obj) ;
+            }
+
+            else if (input2.checked == true) 
+            {
+                //console.log("month2");
+                var monthData = document.querySelector("#month13").innerHTML ;
+                var price  = document.querySelector("#price3").innerHTML ;
+
+               var obj = {
+                   course : courseName,
+                   month : monthData,
+                   price : price
+               }
+
+                googleData.push(obj) ;
+            }
+
+
+            else if (input3.checked == true) {
+               // console.log("month3")
+               var monthData = document.querySelector("#month16").innerHTML ;
+               var price  = document.querySelector("#price3").innerHTML ;
+
+              var obj = {
+                  course : courseName,
+                  month : monthData,
+                  price : price
+              }
+
+              googleData.push(obj) ;
+            }
+          
+        console.log(googleData)  
+        
+        localStorage.setItem("googleData",JSON.stringify(googleData)) ;
+
+    })
+
+
+
+
+
+
+</script>

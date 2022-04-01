@@ -9,6 +9,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./sharadstyles/navbar.css">
 </head>
+<style>
+      #data
+    {
+        height:auto ;
+        width:348px;
+        border:none;
+        overflow-y: scroll;
+        cursor: pointer;
+        text-align: justify;
+        margin-left: 12px;
+        max-height: 200px;
+        margin-top: 15px;
+    }
+
+    #input
+    {
+        width:350px;
+        height: 50px;
+        margin: 10.5px 0px 0px 10px; 
+    }
+</style>
 <body>
     <div id="navbar">
         <div class="navpart1">
@@ -26,7 +47,8 @@
               </div> -->
            </div>
            <div>
-               <input type="text" class="input">
+               <input type="text" oninput="debounce(main,100)" id="input">
+               <div id="data"></div>
            </div>
            <div>
             <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -45,8 +67,12 @@
               <div class="loginicon">
                 <i class="fa-solid fa-user-large"></i>
               </div>
-              <div></div>
+              <div> <h4 id="username"></h4></div>
         </div>
     </div>
 </body>
 </html>
+
+<script src="./search.js">
+
+</script>

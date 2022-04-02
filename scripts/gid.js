@@ -1,17 +1,17 @@
 
 
 let  gridArr=
-[{imgurl:"/Courseera-clone/components/UNT-logo1 (1).jpg",name:"Bachelor of Applied Arts and Sciences",dis:"#23 Best Online Learning Schools (Newsweek, 2022)"},
-{imgurl:"/Courseera-clone/components/UoL-Logo_180x180.png",name:"Bachelor of Business Administration",dis:"#2 Executive MBAs in Latin America (QS Rankings, 2020)"},
-{imgurl:"/Courseera-clone/components/UNT-logo1 (1).jpg",name:"Bachelor of Sciences in Business Administration",dis:"#23 Best Online Learning Schools (Newsweek, 2022)"},
-{imgurl:"/Courseera-clone/components/UoL-Logo_180x180.png",name:"Bachelor of Sciences in Business Administration",dis:"#2 Executive MBAs in Latin America (QS Rankings, 2020)"}]
+[{imgurl:"./components/UNT-logo1 (1).jpg",name:"Bachelor of Applied Arts and Sciences",dis:"#23 Best Online Learning Schools (Newsweek, 2022)"},
+{imgurl:"./components/UoL-Logo_180x180.png",name:"Bachelor of Business Administration",dis:"#2 Executive MBAs in Latin America (QS Rankings, 2020)"},
+{imgurl:"./components/UNT-logo1 (1).jpg",name:"Bachelor of Sciences in Business Administration",dis:"#23 Best Online Learning Schools (Newsweek, 2022)"},
+{imgurl:"./components/UoL-Logo_180x180.png",name:"Bachelor of Sciences in Business Administration",dis:"#2 Executive MBAs in Latin America (QS Rankings, 2020)"}]
 
 function degreeFilter(){
     console.log("hii")
     let h5= document.createElement("h5")
     h5.innerText="Showing 6 total results for Master's Degree in Business"
     let div = document.getElementById("leadingUniversity")
-    div.style.display="list-item";  
+    div.style.display="block";  
     div.style.marginLeft="100px";
     div.append(h5);
   let program = document.getElementById("degree").value 
@@ -20,11 +20,21 @@ function degreeFilter(){
     appendvideo(gridArr)
   }
 }
+
+
+
+var degree123 = document.querySelector("#degree123") ;
+degree123.append(h5)
+
+
 function appendvideo(data){
     let container = document.getElementById("leadingUniversity")
+
+    // let h5 = document.createElement("h5")
+    // h5.innerText="Showing 4 total results for Bachelor's Degree in Business"
+
     data.forEach((ele)=>{
-      let h5= document.createElement("h5")
-      h5.innerText="Showing 4 total results for Bachelor's Degree in Business"
+    
        let div = document.createElement("div")
        let sdiv=document.createElement("div")
        let imgdiv =document.createElement("div")
@@ -40,7 +50,7 @@ function appendvideo(data){
        sdiv.append(name,p)
        div.append(imgdiv,sdiv)
        
-       container.append(h5,div)
+       container.append(div)
 
     })
 }

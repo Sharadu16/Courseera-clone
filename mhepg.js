@@ -1,4 +1,3 @@
-
 document.getElementById("nav21").addEventListener("click", goToHomepg);
 
 function goToHomepg(){
@@ -70,14 +69,7 @@ else{
         div1.append(para,name,month,div3)
         div.append(image,div1);
         container.append(div)
-    
-    
-         
-    
     }
-
-
- 
 // img.addEventListener("click", function()
 // {
 // window.location.href="video.html";

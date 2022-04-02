@@ -88,14 +88,14 @@ let courseData = [
 
  function searchData()
  {
-     let input = document.querySelector("#input").value;
+     let input = document.querySelector("#input123").value;
  }
 
 
  function appendData(courseData)
  {
-     var data = document.querySelector("#data") ;
-     data.innerHTML = null ;
+     var data12 = document.querySelector("#data123") ;
+     data12.innerHTML = null ;
 
      courseData.forEach(function(el)
      {
@@ -108,7 +108,6 @@ let courseData = [
         image.style.width ="50px" ;
         image.style.marginRight = "20px"
 
-
         let para = document.createElement("h4");
         para.innerText = el.courseName ;
         para.addEventListener("click",function()
@@ -119,7 +118,7 @@ let courseData = [
 
         div.append(image,para)
 
-        data.append(div) ;
+        data12.append(div) ;
      })
  }
 

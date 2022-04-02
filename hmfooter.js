@@ -136,8 +136,8 @@ const footer = ()=>{
     </div>
     <div class="last_footer_list">
         <!-- <h2>Learn Anywhere</h2> -->
-        <img src="./components/images/download_on_the_app_store_badge_en.svg" alt="">
-        <img src="./components/images/en_generic_rgb_wo_45.png" alt="">
+      <a href="https://apps.apple.com/us/app/coursera-learn-new-skills/id736535961"><img src="./components/images/download_on_the_app_store_badge_en.svg" alt=""></a>  
+      <a  href ="https://play.google.com/store/apps/details?id=org.coursera.android&hl=en_IN&gl=US">  <img id="image1" src="./components/images/en_generic_rgb_wo_45.png" alt=""></a>
         <img id="certified" src="./components/images/2018-B-Corp-Logo-Black-S.png" alt="">
     </div>
 </div>

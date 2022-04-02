@@ -1,7 +1,7 @@
 #container
 {
     border:1px solid red;
-    background-image: url("./images/backGround.png");
+    background-image: url("../components/images/ABbackGround.png");
     height: 800px;
     width:100%;
     margin: auto;

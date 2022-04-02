@@ -2,7 +2,7 @@
     height: 60px;
     width: 100%;
     background-color: #d6edf6;
-    margin-top: 100px;
+    margin-top: 10px;
     padding-top: 30px;
     font-size: 20px;
     display: flex;
@@ -45,11 +45,11 @@
 }
 #b3 > div{
     font-weight: bold;
-    padding-top: 22px;
+    padding-top: 16px;
     border-radius: 5px;
 }
 #b31{
-    height: 50px;
+    height: 55px;
     width: 220px;
     border: 2px solid #0056d2;
     background-color: #0056d2;
@@ -59,7 +59,7 @@
     padding-top: 22px;
 }
 #b32{
-    height: 50px;
+    height: 55px;
     width: 260px;
     border: 2px solid #0056d2;
     background-color: #fff;
@@ -327,7 +327,7 @@
 }
 
 .d3{
-    height: 30px;
+    height: 53px;
     width: 160px;
     border: 2px solid #0056d2;
     background-color: #0056d2;

@@ -42,9 +42,39 @@ Our construct week project on Expedia cloning
 
 ![c16](https://user-images.githubusercontent.com/99031812/161411399-01619d29-ffc4-459e-bafd-4835920363a5.PNG)
 
-11.In search we have added debouncing when you write any alphabet 
+11.In search we have added debouncing when you write any alphabet it will show results which contains that alphabet.
 
 ![c18](https://user-images.githubusercontent.com/99031812/161411482-45f68e94-61b8-4f4c-95cb-4473773c7ba9.PNG)
+
+12.After serach you will enter in new page which shows details about your selected cource.
+
+![c22](https://user-images.githubusercontent.com/99031812/161412544-c6dc1587-a2bb-421f-ac61-239e80532698.PNG)
+
+13.After clicking on entroll for free you will get the course duration and price options from which you have to select one.
+
+ ![c23](https://user-images.githubusercontent.com/99031812/161412880-57196dc2-22c6-4136-8abb-650a8a7e55c5.PNG)
+ 
+14.Then you will enter on confirm payment page which shows duration and price of selected course.
+
+![c24](https://user-images.githubusercontent.com/99031812/161413260-bc54d6e5-abf4-4769-a06c-2b0092d175d6.PNG)
+
+15.Then you will enter payment page, where you have to select card payment.
+
+![c35](https://user-images.githubusercontent.com/99031812/161413319-375af9b7-4aa0-4afa-9047-6676495837c0.PNG)
+
+16.After providing all the details you will get alert of payment successful after click on ok you will enter on home page. 
+
+![678](https://user-images.githubusercontent.com/99031812/161413637-79689b63-9e1e-4dfa-973b-48731bee6690.PNG)
+
+17.On home page your selected course will append.
+
+![last](https://user-images.githubusercontent.com/99031812/161413807-eb1f017f-48fe-4c65-9812-f763039641c6.PNG)
+
+
+
+
+
+
 
 
 

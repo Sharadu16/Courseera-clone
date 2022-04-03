@@ -15,13 +15,13 @@
         if (name.length && cardNumber.length && expiry && cvv) {
         console.log(name, cardNumber, expiry, cvv);
         if (
-            cardNumber.length == 16 &&
-            expiry === "2026-02" &&
+            cardNumber.length == "16" &&
+            expiry >"2021" &&
             cvv.length === 3) 
         {
-            var otp = prompt("Enter Your OTP");
+            var otp = prompt("Enter Your 6-digit OTP");
             // console.log(otp)
-            if (otp === "123456") {
+            if (otp.length==6) {
             // localStorage.removeItem("cartPage");
             window.location.href = "mhmepg.html";
             alert("Payment is Successful");

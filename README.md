@@ -3,7 +3,7 @@ masai-Second-project
 # Project : Courseera-clone
 <a href="https://inquisitive-cassata-5ce846.netlify.app/">Coursera Clone Link</a>
 # Collaborator :
-This is a collaborative Project from Masai School in the Construct Week by FW-16 batch students. We were 5 members of the team:
+This is a collaborative Project from Masai School in the Construct Week by FW-16 batch students. there were a total of 5 members in the team:
 1. Saradindu Prakash 
 2. Papil Kamdi
 3. Krutika Wadhai

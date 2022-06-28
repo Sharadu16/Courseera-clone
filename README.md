@@ -1,7 +1,7 @@
 # My Second Project
 masai-Second-project
 # Project : Courseera-clone
-<a href="https://inquisitive-cassata-5ce846.netlify.app/">Coursera Clone Link</a>
+<a href="https://cloneofcourserafw16.netlify.app/">Coursera Clone Link</a>
 # Collaborator :
 This is a collaborative Project from Masai School in the Construct Week by FW-16 batch students. there were a total of 5 members in the team:
 1. Saradindu Prakash 
@@ -11,7 +11,7 @@ This is a collaborative Project from Masai School in the Construct Week by FW-16
 5. Abhishek 
 
 ## Images Of Our Project :
-* [COURSERA ]("https://inquisitive-cassata-5ce846.netlify.app/") Images (From our Website) 
+* [COURSERA ]("https://cloneofcourserafw16.netlify.app/") Images (From our Website) 
 ![Screenshot (158)](https://user-images.githubusercontent.com/99641288/171847714-4a739129-dba0-4c50-bc75-89ddf54663ac.png)
 
 ![Screenshot (159)](https://user-images.githubusercontent.com/99641288/171847780-40674af9-c8cf-4cee-a061-8f862d607ffe.png)

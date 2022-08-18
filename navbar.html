@@ -14,15 +14,15 @@
     {
         height:auto ;
         width:348px;
-        border:none;
         overflow-y: scroll;
         cursor: pointer;
         text-align: justify;
         margin-left: 12px;
         max-height: 200px;
         margin-top: 15px;
+        background-color: red;
+        position: absoulte;
     }
-
     #input
     {
         width:350px;
@@ -48,7 +48,7 @@
            </div>
            <div>
                <input type="text" oninput="debounce(main,100)" id="input">
-               <div id="data"></div>
+               <div id="data" style="background-color: white;"></div>
            </div>
            <div>
             <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
